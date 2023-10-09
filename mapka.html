@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapka</title>
+    <style>
+        body {
+           
+            padding: 0;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/Zwierzyniec_-_ko%C5%9Bci%C3%B3%C5%82_%22na_wyspie%22.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #srodek {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+.kolumna {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 2px solid black; 
+            border-radius: 10px;
+
+
+ table {
+            border-collapse: collapse;
+            background-color: white; 
+            border: 2px solid black; 
+        }
+
+
+        #mapa {
+            position: relative;
+            width: 400px; 
+            height: 400px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="srodek">
+        <div id="mapa">
+            <img src="https://tiny.pl/c1v5d" alt="Zdjęcie na środku" usemap="#mapa-obrazka" width="750" height="500" style="margin-top: -80px; margin-left: -13px;">
+    <div id="mapa">
+            <map name="mapa-obrazka">
+                <area shape="rect" coords="168,221,296,280" href="https://tiny.pl/c1vp2">
+                <area shape="rect" coords="326,354,401,401" href="https://tiny.pl/c1vp1">
+                <area shape="rect" coords="813,164,596,269" href="https://tiny.pl/c1vp4">
+               
+            </map>
+        <table>
+            <tr>
+                <td class="kolumna">
+                    <h2>Kościół</h2>
+                    <p>Najedź kursorem na kosciółek na wodzie i kliknij lewy przycisk myszy.</p>
+                </td>
+                <td class="kolumna">
+                    <h2>Szkoła</h2>
+                    <p>Najedź kursorem na budynek technikum i kliknij lewy przycisk myszy.</p>
+                </td>
+                <td class="kolumna">
+                    <h2>Browar</h2>
+                    <p>Najedź kursorem na browar i kliknij lewy przycisk myszy.</p>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </div>
+</body>
+<p><a href="index.html">Powrót do strony głównej</a></p>
+</html>

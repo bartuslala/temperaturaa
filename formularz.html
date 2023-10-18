@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja na wycieczkę do Energylandii</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FF99CC;
+            text-align: center;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        input[type="radio"] {
+            margin: 0 10px 0 0;
+        }
+
+        input[type="checkbox"] {
+            margin: 0 10px 0 0;
+        }
+
+        .attractions {
+            margin-bottom: 20px;
+        }
+
+        .attractions label {
+            display: block;
+            font-weight: normal;
+        }
+
+        .attractions input[type="text"] {
+            width: 100%;
+        }
+
+        .meals label {
+            font-weight: normal;
+        }
+
+        .agreement {
+            text-align: left;
+        }
+
+        .submit-btn {
+            background-color: #FF69B4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="bartek.lalik1@wp.pl" method="post">
+        <h2>Rejestracja na wycieczkę do Energylandii</h2>
+        <label for="imie">Podaj Imię</label>
+        <input type="text" id="imie" name="imie" required>
+
+        <label for="nazwisko">Podaj Nazwisko</label>
+        <input type="text" id="nazwisko" name="nazwisko" required>
+
+        <label for="email">Podaj email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="plec">Wybór płci</label>
+        <input type="radio" id="plec-mezczyzna" name="plec" value="Mężczyzna">
+        <label for="plec-mezczyzna">Mężczyzna</label>
+        <input type="radio" id="plec-kobieta" name="plec" value="Kobieta">
+        <label for="plec-kobieta">Kobieta</label>
+
+        <label for="wiek">Wpisanie wieku</label>
+        <input type="text" id="wiek" name="wiek" required>
+
+        <div class="attractions">
+            <label>Wybór wielokrotny atrakcji na które chcesz wejść</label>
+            <input type="checkbox" id="hyperion" name="atrakcje[]" value="Hyperion">
+            <label for="hyperion">Hyperion</label>
+            <input type="checkbox" id="zadra" name="atrakcje[]" value="Zadra">
+            <label for="zadra">Zadra</label>
+            <input type="checkbox" id="mayan" name="atrakcje[]" value="Mayan">
+            <label for="mayan">Mayan</label>
+            <input type="checkbox" id="abyssus" name="atrakcje[]" value="Abyssus">
+            <label for="abyssus">Abyssus</label>
+            <label for="inne">Inne (jakie?)</label>
+            <input type="text" id="inne" name="inne_atrakcje">
+        </div>
+
+        <label for="posilek">Wybór z listy co chcesz zjeść</label>
+        <select id="posilek" name="posilek">
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="lepiej">Lepiej nie jeść przed Zadrą (bartus dobra rada😅)</option>
+        </select>
+
+        <div class="agreement">
+            <input type="checkbox" id="zgoda" name="zgoda" required>
+            <label for="zgoda">Zaznacz zgody na przetwarzanie danych</label>
+        </div>
+
+        <input type="submit" class="submit-btn" value="Zarejestruj się">
+    </form>
+</body>
+
+<a href="index.html" style="display: block; text-align: center; margin-top: 20px;">
+    <button style="background-color: #48D1CC; padding: 10px 20px; border: none; border-radius: 5px; color: white; font-weight: bold;">Powrót do strony głównej</button>
+</a>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendarz Adwentowy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #FFC0CB; 
+        }
+
+        h1 {
+            color: #cc0066; 
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #cc0066; 
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff66b2; 
+        }
+
+        #content {
+            margin-top: 20px;
+        }
+
+        .back-to-home {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #cc0066; 
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            background-color: #ff66b2; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kalendarz Adwentowy</h1>
+
+    <div class="calendar">
+     
+        <button onclick="showContent('1')">1</button>
+        <button onclick="showContent('2')">2</button>
+        <button onclick="showContent('3')">3</button>
+        <button onclick="showContent('4')">4</button>
+        <button onclick="showContent('5')">5</button>
+        <button onclick="showContent('6')">6</button>
+        <button onclick="showContent('7')">7</button>
+        <button onclick="showContent('8')">8</button>
+        <button onclick="showContent('9')">9</button>
+        <button onclick="showContent('10')">10</button>
+        <button onclick="showContent('11')">11</button>
+        <button onclick="showContent('12')">12</button>
+        <button onclick="showContent('13')">13</button>
+        <button onclick="showContent('14')">14</button>
+        <button onclick="showContent('15')">15</button>
+        <button onclick="showContent('16')">16</button>
+        <button onclick="showContent('17')">17</button>
+        <button onclick="showContent('18')">18</button>
+        <button onclick="showContent('19')">19</button>
+        <button onclick="showContent('20')">20</button>
+        <button onclick="showContent('21')">21</button>
+        <button onclick="showContent('22')">22</button>
+        <button onclick="showContent('23')">23</button>
+        <button onclick="showContent('24')">24</button>
+    </div>
+
+    <div id="content"></div>
+
+    <a href="index.html" class="back-to-home">Powrót do strony głównej</a>
+
+    <script>
+        function showContent(day) {
+           
+            const contentData = {
+                '1': 'Dzień 1: Wesołych Świąt i radosnego Adwentu!',
+                '2': 'Dzień 2: Niech magiczna atmosfera świąt towarzyszy Ci przy filmie: (xd) <a href="https://youtu.be/w7_EpMM2jD8?si=lc9LAJ5UNpZ0WKff">Link</a>',
+                '3': 'Dzień 3: Piękne chwile spędzone z rodziną i przyjaciółmi!',
+                '4': 'Dzień 4: Życzenia ciepłych i radosnych chwil!',
+                '5': 'Dzień 5: Świąteczne przygotowania są równie ważne co sama Wigilia!',
+                '6': 'Dzień 6: Niech te święta niosą ze sobą spokój i radość!',
+                '7': 'Dzień 7: Życzymy Ci uśmiechu na co dzień!',
+                '8': 'Dzień 8: Cieszymy się, że możemy razem spędzić te piękne chwile!',
+                '9': 'Dzień 9: Niech prezenty świąteczne spełnią Twoje marzenia!',
+                '10': 'Dzień 10: Wspomnienia ze świąt niech zostaną na zawsze w sercu!',
+                '11': 'Dzień 11: Radosnych spotkań i ciepłych rozmów!',
+                '12': 'Dzień 12: Piękna zima, śnieg za oknem i radosne chwile!',
+                '13': 'Dzień 13: Magiczne światło świec niech rozświetla Twój dom!',
+                '14': 'Dzień 14: Życzenia spokoju i radości w świątecznym czasie!',
+                '15': 'Dzień 15: Pachnąca choinka i wspólne śpiewanie kolęd!',
+                '16': 'Dzień 16: Niech te dni przyniosą radość i spełnienie marzeń!',
+                '17': 'Dzień 17: Życzymy zdrowia i mnóstwo radosnych chwil!',
+                '18': 'Dzień 18: Świąteczne przysmaki niech rozpieszczają Twój smak!',
+                '19': 'Dzień 19: Długi weekend pełen relaksu i świątecznej magii!',
+                '20': 'Dzień 20: Ciepłe świąteczne przytulanie dla Ciebie!',
+                '21': 'Dzień 21: Zbliżają się święta, czas radości i wzruszeń!',
+                '22': 'Dzień 22: Blask świec i ciepło rodzinnej atmosfery!',
+                '23': 'Dzień 23: Życzymy spełnienia wszystkich marzeń!',
+                '24': 'Dzień 24: Wigilijnej nocy pełnej magii i szczęśliwych chwil!',
+            };
+
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = contentData[day];
+        }
+    </script>
+
+</body>
+</html>
